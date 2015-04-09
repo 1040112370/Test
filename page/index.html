@@ -14,9 +14,10 @@
 <title>打折网</title>
 <meta name="keywords" content="打折网">
 <meta name="description" content="打折网">
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!--<link rel="stylesheet" href="../css/style.css">-->
 <link rel="stylesheet" href="../css/af.ui.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/style.css">
 
 <style type="text/css">
 .temai{padding:10px;}
@@ -36,7 +37,6 @@ a .tm_btn{float:left; width:88px; height:42px; line-height:42px; text-align:cent
 .time_icon{float:left; width:18px; height:18px; background-position:-256px -113px; margin-top:1px;}
 .tm_pr{padding:10px 10px 5px; border-bottom:1px dashed #f5f5f5; }
 .tm_tRight{float:right; background-position:-256px -29px; padding-left:15px;}
-.content { padding: 10px 0 0 0; width:100%; position: absolute; top: 43px; bottom: 40px; overflow: auto; -webkit-overflow-scrolling: touch; }
 </style>
 
 <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -61,139 +61,149 @@ a .tm_btn{float:left; width:88px; height:42px; line-height:42px; text-align:cent
 </head>
 <body class="whitebg">
 <div class="view" id="mainView">
-	<header class="headbar">
-		<h1 class="title">团购秒杀</h1>
+	<header>
+		<h1></h1>
 		<a href="#" class="head_righ"><span class="glyphicon glyphicon-search"></span></a>
 	</header>
 	<div class="pages">
-		<div class="panel" data-title="Home" id="home" data-selected="true">
-			  <ul class="nav_tab tab2 clearfix">
+		<div class="panel" data-title="团购秒杀" id="home" data-selected="true">
+			<ul class="nav_tab tab2 clearfix">
 				<li class="active"><a href="#">团购秒杀</a></li>
 				<li><a href="zhidemai.html">值得买</a></li>
 			</ul>
 			<section class="search">
-				<form  class="text-center" role="form">
-					<input type="text" class="form-control search_txt"  placeholder="请输入产品名称..." >
+				<form class="text-center" role="form">
+					<input type="text" class="form-control search_txt" placeholder="请输入产品名称...">
 				</form>
 			</section>
-			<ul class="temai">	
+			<ul class="temai">
 				<li class="">
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">立即购买</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
-				
+			
 				<li>
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">敬请期待</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
-				
+			
 				<li>
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">敬请期待</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
-				
+			
 				<li>
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">敬请期待</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
-				
+			
 				<li>
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">敬请期待</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
-				
-				
+			
 				<li>
-					<div class="t_img"><img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive"></div>
+					<div class="t_img">
+						<img src="http://img02.taobaocdn.com/imgextra/i2/653243179/TB2CPgybFXXXXclXXXXXXXXXXXX_!!653243179.gif" class="img-responsive">
+					</div>
 					<div class="tm_info">
 						<p class="tm_txt"><span class="red">温碧泉化妆品</span>套装 透芯润护肤品冬季补水保湿面部护理正品美白女现增加豪华赠品，3大礼包任你选择！①定制金稻蒸脸器+透芯润乳液20ml 基</p>
 						<div class="tm_price">
 							<a href="#" class="price"><span class="price_now">￥2500</span><span class="tm_btn">敬请期待</span></a>
 						</div>
 						<div class="tm_pr"><span class="pull-right">您节省:￥1111</span>市场价:￥1299</div>
-						<div class="tm_bttom"><p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
+						<div class="tm_bttom">
+							<p class="tm_tRight"><span class="red">1200人</span>购买</p><i class="time_icon"></i>剩余时间：2天09时52分18秒</div>
 					</div>
 				</li>
 			</ul>
-		 </div>  
+		 </div>
+		 
+		<div class="panel" data-title="优惠券" id="coupon" data-include="coupon.html"></div>
+    
+	    <div class="panel" data-title="店铺街" id="storegps" data-include="storegps.html"></div>
+	    
+	    <div class="panel" data-title="微商圈" id="expert" data-include="expert.html"></div>
+	    
+	    <div class="panel" data-title="我的中心" id="myzoe" data-include="myzoe.html"></div>
 	</div>
+    
+  
+    
+    <footer>
+		<a href="#home">
+			<span><img class="nav_icon" src="../images/icon_1.png" alt="值得买"></span>
+			<p>值得买</p>
+		</a>
+		<a  href="#coupon">
+			<span><img class="nav_icon" src="../images/icon_2.png" alt="优惠"></span>
+			<p>优惠券</p>
+		</a>
 	
-    <div class="panel" data-title="优惠券" id="coupon" data-include="coupon.html">coupon</div>
-    
-    <!--<div class="panel" data-title="店铺街" id="storegps" data-include="storegps.html">storegps</div>
-    
-    <div class="panel" data-title="微商圈" id="expert" data-include="expert.html">expert</div>
-    
-    <div class="panel" data-title="我的中心" id="myzoe" data-include="myzoe.html">myzoe</div>-->
+		<a href="#storegps">
+			<span><img class="nav_icon" src="../images/icon_4.png" alt="店铺街"></span>
+			<p>店铺街</p>
+		</a>
+	
+		<a href="#expert">
+			<span><img class="nav_icon" src="../images/icon_3.png" alt="微商圈"></span>
+			<p>微达人</p>
+		</a>
 
-	<footer class="body_footer">
-		<ul class="clearfix">
-			<li class="active">
-				<a href="#home">
-					<span><img class="nav_icon" src="../images/icon_1.png" alt="值得买"></span>
-					<p>值得买</p>
-				</a>
-			</li>
-			<li>
-				<a  href="#coupon">
-					<span><img class="nav_icon" src="../images/icon_2.png" alt="优惠"></span>
-					<p>优惠券</p>
-				</a>
-			</li>
-			<!--<li>
-				<a href="#storegps">
-					<span><img class="nav_icon" src="../images/icon_4.png" alt="店铺街"></span>
-					<p>店铺街</p>
-				</a>
-			</li>
-				<li>
-				<a href="#expert">
-					<span><img class="nav_icon" src="../images/icon_3.png" alt="微商圈"></span>
-					<p>微达人</p>
-				</a>
-			</li>
-			<li>
-				<a href="#myzoe">
-					<span><img class="nav_icon" src="../images/icon_5.png" alt="我的中心"></span>
-					<p>我的中心</p>
-				</a>
-			</li>-->
-		</ul>
+		<a href="#myzoe">
+			<span><img class="nav_icon" src="../images/icon_5.png" alt="我的中心"></span>
+			<p>我的中心</p>
+		</a>
 	</footer>
 </div>
 
@@ -224,10 +234,12 @@ a .tm_btn{float:left; width:88px; height:42px; line-height:42px; text-align:cent
         <div class="pages">
             <div class="panel" data-title="我的中心" id="myzoe" data-include="myzoe.html">myzoe</div>
         </div>
-	 </div>
-	     -->
+	 </div>-->
 	     
-	     
+	 <script type="text/jscript">
+	 	
+	 	
+	 </script>  
 
 </body>
 </html>
